@@ -91,11 +91,11 @@ jQuery('#'+gridx).jqGrid({
 //	reloadAfterSubmit: true,
 gridComplete: function() { //setup the custom buttons
 		var ids = jQuery('#'+gridx).jqGrid('getDataIDs');
-		for(var i=0;i < ids.length;i++){ 
+		for(var i=0;i < ids.length;i++){
 			var cl = ids[i];
 			var be="";
 			be = genImgButton(buttons,cl,gridx);
-			jQuery('#'+gridx).jqGrid('setRowData',cl,{act:be}); 
+			jQuery('#'+gridx).jqGrid('setRowData',cl,{act:be});
 		}
 	}
 });
@@ -117,4 +117,3 @@ gridComplete: function() { //setup the custom buttons
 
 	return gridx;
 }
-
